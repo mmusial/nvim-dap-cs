@@ -195,7 +195,7 @@ local setup_configuration = function(dap, dap_utils, dap_ui, config)
 
   for _, dap_config in ipairs(config.dap_configurations) do
     if dap_config.type == "coreclr" then
-      table.insert(dap.configurations.cs, config)
+      table.insert(dap.configurations.cs, dap_config)
     end
   end
 end
